@@ -13,7 +13,7 @@ class TestDatabase(unittest.TestCase):
         self.test_db = self.test_client["user_security_questions"]
         self.test_collection = self.test_db["user_1"]
         self.test_question = "What is your favourite food"
-        self.test_answer = "Fish"
+        self.test_answer = "cookies"
         self.test_collection.insert_one({"question": self.test_question, "answer": self.test_answer})
 
     def test_query_question(self):

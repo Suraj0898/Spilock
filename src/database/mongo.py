@@ -19,7 +19,7 @@ def insert_database():
     # Example of a Security Question [Question/Answer Pair]
     pair_1 = {
         "question": "What is your favourite food",
-        "answer": "Fish",
+        "answer": "cookies",
     }
     collection_name.insert_one(pair_1)
 
