@@ -1,17 +1,13 @@
 import speech_recognition as sr
-from datetime import date
-import RPi.GPIO as GPIO
-from time import sleep
+
 
 from utils.microphone import microphone
 
 
 def listen():
-    relay = 26
 
     r = sr.Recognizer()
     mic = sr.Microphone(device_index=1)
-
     print("start")
 
     while True:
