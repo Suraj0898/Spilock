@@ -4,7 +4,6 @@ from src.database.mongo import query_question, query_answer
 from src.sensor.listen import listen
 from utils import i2c_lcd_driver
 import RPi.GPIO as GPIO
-from mfrc522 import SimpleMFRC522
 from time import sleep
 
 from utils.microphone import microphone
@@ -13,11 +12,6 @@ buzzer = 19
 
 # Include the relay pin
 relay = 26
-
-# Enter your tag ID
-my_microphone = microphone()
-my_microphone = listen()
-mic_answer = my_microphone.get_response()
 
 door = True
 
@@ -41,6 +35,9 @@ def voice_auth():
         question = query_question()
         print(question)
         lcd.lcd_display_string(question, 1, 1)
+
+        my_microphone = listen()
+        mic_answer = my_microphone.get_response()
 
         valid_answer = query_answer(question)
 
