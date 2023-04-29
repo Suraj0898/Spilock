@@ -28,5 +28,5 @@ The sensors used in this project include an RFID module for card scanning, while
 Spilock is a reliable and secure 2-factor authentication based door locking system, designed to keep your property safe. The project can be further enhanced to include additional features such as facial recognition, motion detection, and remote access control.
 
 # Contributors:
-- Sonali Mondal (NUID: 002128542)
-- Suraj Suhas (NUID: 002747142)
+- Sonali Mondal (NUID: 002747142)
+- Suraj Suhas (NUID: 002128542)
